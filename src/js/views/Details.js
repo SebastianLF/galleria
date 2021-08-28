@@ -10,7 +10,7 @@ function Details(data) {
     data: data,
     template: function (props) {
       const imageUrl = makeAbsolutePath(props.images.hero.large);
-      const artistImage = props.artist.image;
+      const artistImage = makeAbsolutePath(props.artist.image);
       console.log(data);
 
       return `  
