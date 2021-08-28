@@ -9,7 +9,7 @@ function Header() {
           <header>
             <div class="header">
                 <a href="/"
-                    ><img class="header__logo" src="./assets/shared/logo.svg" alt="logo galleria"
+                    ><img class="header__logo" src="/assets/shared/logo.svg" alt="logo galleria"
                 /></a>
                 <button class="header__slideshow-button">start slideshow</button>
             </div>
