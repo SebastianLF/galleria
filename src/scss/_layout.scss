@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: space-between;
+
+  @media screen and (max-width: 375px) {
+    padding: $gutter-sm;
+  }
+
+  &__logo {
+    @media screen and (max-width: 375px) {
+      max-width: 7.0625rem;
+    }
+  }
+
+  &__slideshow-button {
+    font-family: "Libre Baskerville";
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+    color: #7d7d7d;
+
+    @media screen and (max-width: 375px) {
+      font-size: 0.5625rem;
+      letter-spacing: 0.12rem;
+    }
+  }
+}
+
+.content {
+  padding: $gutter-lg;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: $gutter-lg;
+}
+
+.separator {
+  height: 1px;
+  background-color: $color-light-grey;
+
+  &--content {
+    @extend .separator;
+    margin: 0 $gutter-lg;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 0;
+  }
+}
+
+#app {
+  max-width: 90em;
+  margin: 0 auto;
+}
