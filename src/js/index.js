@@ -10,6 +10,7 @@ import Navigo from "navigo";
 import SlideshowNav from "./components/SlideshowNav";
 
 function renderApp() {
+  console.log(document.location);
   // render layout to DOM
   const header = new Header();
   header.render();
