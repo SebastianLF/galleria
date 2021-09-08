@@ -2,6 +2,7 @@
   display: flex;
   padding: 2.5rem;
   justify-content: space-between;
+  align-items: center;
 
   @media screen and (max-width: 375px) {
     padding: $gutter-sm;
@@ -20,6 +21,12 @@
     text-transform: uppercase;
     letter-spacing: 0.16rem;
     color: #7d7d7d;
+    cursor: pointer;
+    transition: color 0.1s ease;
+
+    &:hover {
+      color: #000;
+    }
 
     @media screen and (max-width: 375px) {
       font-size: 0.5625rem;
@@ -53,6 +60,6 @@
 }
 
 #app {
-  max-width: 90em;
+  max-width: 90rem;
   margin: 0 auto;
 }

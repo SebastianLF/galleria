@@ -46,3 +46,18 @@
     transform: translateZ(0) translateY(0);
   }
 }
+
+/**
+ * -----------------------------------------------------
+ * animation slide for slideshow navigation progress bar
+ * -----------------------------------------------------
+ */
+
+ @keyframes slide-progress {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.75;
+  }
+ }

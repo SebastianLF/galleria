@@ -2,7 +2,6 @@ import Component from "../constructors/Component";
 import { appNodeId } from "../constants";
 
 function SlideshowNav(data) {
-  console.log(data);
   const iconClassNavPrevious = data.previous === null ? "disabled" : "";
   const iconClassNavNext = data.next === null ? "disabled" : "";
 
@@ -15,8 +14,8 @@ function SlideshowNav(data) {
     template: function (props) {
       // HTML template append to DOM for this component
       return `
-            <div class="separator"></div>
             <div class="slideshow-nav-container">
+                <div class="separator"></div>
                 <div class="slideshow-nav-heading">
                     <p class="slideshow-nav__painting-title">${props.name}</p>
                     <p class="slideshow-nav__painting-artist">${props.artist.name}</p>
@@ -29,7 +28,7 @@ function SlideshowNav(data) {
                         <img src="/assets/shared/icon-next-button.svg"></img>
                     </a>
                 </nav>
-           </div>
+            </div>
         `;
     },
   };

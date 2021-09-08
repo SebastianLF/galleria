@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-back-button" viewBox="0 0 35 32">
+        <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M32.221 2.457l-27.385 13.693 27.385 13.692v-27.385z"></path>
+        <path fill="#d8d8d8" style="fill: var(--color1, #d8d8d8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" stroke="#000" d="M1.315 0.667h-1.333v30.367h1.333z"></path>
+    </symbol>
+    <symbol id="icon-next-button" viewBox="0 0 35 32">
+        <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M2.037 2.457l27.384 13.693-27.384 13.692v-27.385z"></path>
+        <path fill="#d8d8d8" style="fill: var(--color1, #d8d8d8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" stroke="#000" d="M32.944 0.667h1.333v30.367h-1.333z"></path>
+    </symbol>
+    </defs>
+</svg>

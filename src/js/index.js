@@ -7,12 +7,14 @@ import Content from "./components/Content";
 import Home from "./views/Home";
 import { createSlug } from "./utils/functions";
 import Navigo from "navigo";
-import SlideshowNav from "./components/SlideshowNav";
 
 function renderApp() {
-  // render layout to DOM
-  const header = new Header();
+  // render header to DOM
+  const startSlideshowLink = createSlug("/paintings/" + paintings[0].name);
+  const header = new Header({ slideshowLink: startSlideshowLink });
   header.render();
+
+  // render content div to DOM
   const content = new Content();
   content.render();
 
@@ -20,9 +22,12 @@ function renderApp() {
   const router = new Navigo("/");
   router
     .on("/", function () {
+
+      // render home page to DOM
       const home = new Home();
       home.render();
-
+      
+      // render paintings within grid to DOM
       paintings.forEach((painting) => {
         const card = new Card(painting);
         card.render();
@@ -38,12 +43,9 @@ function renderApp() {
         }
 
         return false;
-      });
-
-      const detailsView = new Details(paintingFound[0]);
-      detailsView.render();
-      console.log(paintings.length, paintings);
-
+      })[0];
+     
+      const percentageOfTotal = ((_index + 1) / paintings.length) * 100;
       const pagination = {
         previous:
           _index - 1 === -1
@@ -55,11 +57,10 @@ function renderApp() {
             : createSlug("/paintings/" + paintings[_index + 1].name),
       };
 
-      const _paintingFound = paintingFound[0];
-      const _data = Object.assign({ ..._paintingFound, ...pagination });
+      const _data = Object.assign({ ...paintingFound, ...pagination, percentageOfTotal });
 
-      const slideshowNav = new SlideshowNav(_data);
-      slideshowNav.render();
+      const detailsView = new Details(_data);
+      detailsView.render();
     })
     .notFound(() => {
       console.log("404");
