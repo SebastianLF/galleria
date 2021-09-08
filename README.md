@@ -4,7 +4,7 @@ A beautiful gallery displaying one of the most iconic paintings in history. Buil
 
 Demo: https://galleria-nine.vercel.app/
 
-[![desktop-preview.jpg](https://i.postimg.cc/Fzfr2qsr/desktop-preview.jpg)](https://postimg.cc/GTCnDXyV)
+[![preview.jpg](https://i.postimg.cc/8k7cjyLd/preview.jpg)](https://postimg.cc/QVrhzJ4V)
 
 Design by frontend mentors
 
